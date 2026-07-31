@@ -1,0 +1,51 @@
+.lap-card {
+  width: min(360px, calc(100% - 32px));
+  margin: 20px auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.lap-card h1 {
+  margin: 0;
+  color: #222;
+  font-size: 1.4rem;
+}
+
+.lap-card h2 {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lap-card h5 {
+  margin: 0 0 16px;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.lap-card button {
+  border: none;
+  border-radius: 6px;
+  margin: 0 5px 0 0;
+  padding: 9px 16px;
+  background: #e0e0e0;
+  color: #333;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lap-card button:last-child {
+  background: #4a90e2;
+  color: #ffffff;
+}
+
+.lap-card button:hover {
+  filter: brightness(0.92);
+}

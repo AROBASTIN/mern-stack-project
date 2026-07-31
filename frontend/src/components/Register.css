@@ -1,0 +1,209 @@
+.register-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.register-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.register-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.register-form__field label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.register-form__field input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fff;
+    color: #222;
+}
+
+.register-form__field input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74,144,226,0.15);
+}
+
+.register-status {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.register-status--success {
+    background: #e6f9ee;
+    color: #1a7a3f;
+    border: 1px solid #a3d9b5;
+}
+
+.register-status--error {
+    background: #fdecea;
+    color: #b71c1c;
+    border: 1px solid #f5a5a5;
+}
+
+/* Submit + Cancel row */
+.register-form__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.register-form__submit {
+    flex: 1;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.register-form__submit:hover:not(:disabled) {
+    background: #357abd;
+}
+
+.register-form__submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.register-form__cancel {
+    padding: 12px 20px;
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.register-form__cancel:hover {
+    background: #c8c8c8;
+}
+
+/* People list */
+.register-people {
+    margin-top: 28px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+}
+
+.register-people h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.register-loading,
+.register-empty {
+    color: #888;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.register-people ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-people ul li {
+    background: #f5f7fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.register-person__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.register-person__info strong {
+    font-size: 1rem;
+    color: #222;
+}
+
+.register-person__info span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Edit / Delete buttons */
+.register-person__btns {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-edit {
+    padding: 7px 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-edit:hover {
+    background: #357abd;
+}
+
+.btn-delete {
+    padding: 7px 16px;
+    background: #e53935;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background: #b71c1c;
+}

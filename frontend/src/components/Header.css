@@ -1,0 +1,17 @@
+.header-banner {
+  padding: 20px 30px;
+  background: #4a90e2;
+  text-align: center;
+  color: white;
+}
+
+.header-banner h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.header-banner p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
