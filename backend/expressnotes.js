@@ -1,0 +1,27 @@
+const express=require('express');
+const app=express();
+
+
+app.get('/',(req,res)=>{
+    res.send('poda deiiii');
+});
+
+app.get('/login',(req,res)=>{
+    res.send('login aagiruchu da deiii');
+});
+
+app.post('/submit',(req,res)=>{
+    res.send('submit aagiruchu da deiii');
+});
+
+app.put('/update',(req,res)=>{
+    res.send('update aagiruchu da deiii');
+});
+
+app.delete('/delete',(req,res)=>{
+    res.send('delete aagiruchu da deiii');
+}); 
+
+app.listen(5000,()=>{
+    console.log('Server is running on port 5000');
+});
